@@ -1,11 +1,44 @@
 {
-    "jupyter-lite-schema-version": 0,
-    "jupyter-config-data": {
-      "disabledExtensions": [
-        "@jupyterlab/drawio-extension",
-        "jupyterlab-kernel-spy",
-        "jupyterlab-tour"
-      ]
+  "jupyter-lite-schema-version": 0,
+  "jupyter-config-data": {
+    "disabledExtensions": [
+      "@jupyterlab/drawio-extension",
+      "jupyterlab-kernel-spy",
+      "jupyterlab-tour"
+    ]
+  },
+  "federated_extensions": [
+    {
+      "name": "@jupyter-widgets/jupyterlab-manager",
+      "version": "3.0.0",
+      "src": "https://cdn.jsdelivr.net/npm/@jupyter-widgets/jupyterlab-manager@3.0.0"
     }
+  ],
+  "kernel_specs": [
+    {
+      "name": "python3",
+      "resource_dir": "share/jupyter/kernels/python3",
+      "spec": {
+        "argv": ["python3", "-m", "ipykernel_launcher", "-f", "{connection_file}"],
+        "display_name": "Python 3 (Pyodide)",
+        "language": "python"
+      }
+    }
+  ],
+  "lite_plugins": {
+    "pyodide_packages": [
+      "numpy",
+      "matplotlib",
+      "Pillow",
+      "ipywidgets",
+      "ipympl",
+      "ipyevents",
+      "ipycanvas",
+      "ipyleaflet",
+      "plotly",
+      "bqplot",
+      "ipykernel",
+      "traitlets"
+    ]
   }
-  
+}

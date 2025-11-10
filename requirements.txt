@@ -8,9 +8,14 @@ numpy>=1.21.0
 matplotlib>=3.5.0
 pillow>=9.0.0
 
-# Widgets and interactive features (CRITICAL - fix the version constraints; thank you ai)
-ipywidgets>=7.0.0,<9
+# Widgets and interactive features
 widgetsnbextension>=3.0.0,<5
+jupyterlab-widgets>=1.0.0,<4
+
+# Python: ipywidget library for Jupyter notebooks (optional)
+ipywidgets>=8.1.3,<9
+
+ipywidgets>=7.0.0,<9
 jupyterlab-widgets>=1.0.0,<4
 
 # Python kernel (optional)
